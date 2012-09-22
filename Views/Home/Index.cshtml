@@ -1,0 +1,35 @@
+﻿<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">Home</a></p>
+        </div>
+    </div>
+</header>
+<div id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>MVC Chart Demo</h1>
+            </hgroup>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        <h3>Chart rendered via "Chart" action</h3>
+        <ol class="round">
+            <li class="one">
+                <h5>Chart</h5>
+				@{ Html.RenderAction("Chart"); }
+            </li>
+        </ol>
+    </section>
+</div>
+
+@section scripts
+{
+<script type="text/javascript">
+	function myfunction(number) {
+		alert("clicked on point number " + number);
+	}
+</script>
+}
